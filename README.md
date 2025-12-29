@@ -79,17 +79,19 @@ sudo openssl req -x509 -nodes -days 365 \
 sudo a2enmod ssl
 sudo a2ensite default-ssl.conf
 sudo systemctl reload apache2
-
 ---
-
 ## 🧩 Conclusion
 
 This homelab project strengthened my understanding of Linux system administration, secure web hosting, and cross‑platform workflows. It also helped me practice documenting technical work clearly for others to follow. This setup forms the foundation for more advanced projects involving automation, reverse proxies, and full-stack deployments.
-
 ---
+“How to Reproduce This Setup” section
+Even a simple 4‑step outline makes your project more professional:
+1. 	Install Apache
+2. 	Deploy the webpage
+3. 	Generate SSL certificate
+4. 	Enable HTTPS site
 
 ## 🔮 Future Improvements
-
 - Add a proper CA‑signed certificate using Let's Encrypt  
 - Configure a reverse proxy with Nginx or Apache  
 - Deploy a second site using virtual hosts  

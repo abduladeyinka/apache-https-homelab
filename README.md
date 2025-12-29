@@ -80,4 +80,17 @@ sudo a2enmod ssl
 sudo a2ensite default-ssl.conf
 sudo systemctl reload apache2
 
-https://10.0.0.38
+---
+
+## 🧩 Conclusion
+
+This homelab project strengthened my understanding of Linux system administration, secure web hosting, and cross‑platform workflows. It also helped me practice documenting technical work clearly for others to follow. This setup forms the foundation for more advanced projects involving automation, reverse proxies, and full-stack deployments.
+
+---
+
+## 🔮 Future Improvements
+
+- Add a proper CA‑signed certificate using Let's Encrypt  
+- Configure a reverse proxy with Nginx or Apache  
+- Deploy a second site using virtual hosts  
+- Automate certificate renewal with a script  

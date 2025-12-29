@@ -30,7 +30,23 @@ This homelab project includes:
 ---
 
 ## 📂 Project Structure
+## 📸 Screenshots
 
+### ✅ Apache Webpage Loaded Over HTTPS
+![Apache HTTPS Screenshot](screenshots/apache-https-browser.png)
+
+This shows the webpage hosted on Apache, accessed via `https://10.0.0.38`, with a self-signed certificate triggering the browser warning.
+
+---
+
+### 🧠 Learning Outcomes Displayed on the Page
+![Learning Outcomes Screenshot](screenshots/apache-learning-page.png)
+
+The webpage includes a summary of what I learned during the homelab project:
+- Apache installation and configuration
+- SFTP file transfer with FileZilla
+- Linux file permissions
+- Hosting a site on a local network
 ---
 
 ## 🔐 HTTPS Configuration Summary

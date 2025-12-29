@@ -30,6 +30,24 @@ This homelab project includes:
 ---
 
 ## 📂 Project Structure
+## 📂 Project Structure
+
+```
+apache-https-homelab/
+│
+├── index.html              # Website homepage
+├── configs/                # Apache configuration files
+│   ├── 000-default.conf
+│   └── default-ssl.conf
+├── screenshots/            # Project screenshots (optional)
+│   └── *.png
+└── README.md               # Project documentation
+```
+
+## 📸 Screenshots
+
+---
+
 ## 📸 Screenshots
 
 ### ✅ Apache Webpage Loaded Over HTTPS
@@ -43,10 +61,11 @@ This shows the webpage hosted on Apache, accessed via `https://10.0.0.38`, with 
 ![Learning Outcomes Screenshot](screenshots/apache-learning-page.png)
 
 The webpage includes a summary of what I learned during the homelab project:
-- Apache installation and configuration
-- SFTP file transfer with FileZilla
-- Linux file permissions
-- Hosting a site on a local network
+- Apache installation and configuration  
+- SFTP file transfer with FileZilla  
+- Linux file permissions  
+- Hosting a site on a local network  
+
 ---
 
 ## 🔐 HTTPS Configuration Summary
@@ -58,6 +77,7 @@ sudo openssl req -x509 -nodes -days 365 \
   -newkey rsa:2048 \
   -keyout /etc/ssl/private/apache-selfsigned.key \
   -out /etc/ssl/certs/apache-selfsigned.crt
+
 
 Then I enabled SSL and the default HTTPS site:
 
@@ -79,5 +99,5 @@ Then, the Http site loaded at:
 http://10.0.0.38
 
 Also, i noticed the HTTPS site loaded wih a browser warning using same code line :
-http://10.0.0.38
+https://10.0.0.38
 

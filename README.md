@@ -43,22 +43,25 @@ sudo openssl req -x509 -nodes -days 365 \
   -keyout /etc/ssl/private/apache-selfsigned.key \
   -out /etc/ssl/certs/apache-selfsigned.crt
 
-Then I enabled SSL and the default HTTPS site using the follwoing code lines:
+Then I enabled SSL and the default HTTPS site:
 
 sudo a2enmod ssl
 sudo a2ensite default-ssl.conf
 sudo systemctl reload apache2
 
-this allowed the site to be served securely over by https://10.0.0.38
+This allowed the site to be served securely over:
+ https://10.0.0.38
 
 Then, 	I used FileZilla to transfer  and config files from the VM to Windows and ensured correct permissions using:
 sudo chmod 644 index.html
 sudo chown www-data:www-data index.html
 
-i went ahead to test the setup by running Apache:
+To verify the setup, I checked the Apache service:
 systemctl status apache2
 
-Then, the Http site loaded at: "http://10.0.0.38"
+Then, the Http site loaded at:
+http://10.0.0.38
 
-Also, i noticed the HTTPS site loaded wih a browser warning using same code line : "http://10.0.0.38"
+Also, i noticed the HTTPS site loaded wih a browser warning using same code line :
+http://10.0.0.38
 

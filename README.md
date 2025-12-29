@@ -48,14 +48,14 @@ apache-https-homelab/
 ## 📸 Screenshots
 
 ### ✅ Apache Webpage Loaded Over HTTPS
-![Apache HTTPS Screenshot](screenshots/apache-https-browser.png)
+![Apache HTTPS Screenshot](screenshots/abdula.png)
 
 This shows the webpage hosted on Apache, accessed via `https://10.0.0.38`, with a self-signed certificate triggering the browser warning.
 
 ---
 
 ### 🧠 Learning Outcomes Displayed on the Page
-![Learning Outcomes Screenshot](screenshots/apache-learning-page.png)
+![Apache HTTPS Screenshot](screenshots/abdulk.png)
 
 The webpage includes a summary of what I learned during the homelab project:
 

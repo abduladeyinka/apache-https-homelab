@@ -31,6 +31,18 @@ This homelab project includes:
 
 ## 📂 Project Structure
 
+```
+apache-https-homelab/
+│
+├── index.html
+├── configs/
+│   ├── 000-default.conf
+│   └── default-ssl.conf
+├── screenshots/
+│   └── *.png
+└── README.md
+```
+
 ---
 
 ## 📸 Screenshots
@@ -63,12 +75,9 @@ sudo openssl req -x509 -nodes -days 365 \
   -newkey rsa:2048 \
   -keyout /etc/ssl/private/apache-selfsigned.key \
   -out /etc/ssl/certs/apache-selfsigned.crt
+
 sudo a2enmod ssl
 sudo a2ensite default-ssl.conf
 sudo systemctl reload apache2
-https://10.0.0.38
-sudo chmod 644 index.html
-sudo chown www-data:www-data index.html
-systemctl status apache2
-http://10.0.0.38
+
 https://10.0.0.38

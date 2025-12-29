@@ -30,7 +30,6 @@ This homelab project includes:
 ---
 
 ## 📂 Project Structure
-## 📂 Project Structure
 
 ```
 apache-https-homelab/
@@ -46,10 +45,6 @@ apache-https-homelab/
 
 ## 📸 Screenshots
 
----
-
-## 📸 Screenshots
-
 ### ✅ Apache Webpage Loaded Over HTTPS
 ![Apache HTTPS Screenshot](screenshots/apache-https-browser.png)
 
@@ -61,6 +56,7 @@ This shows the webpage hosted on Apache, accessed via `https://10.0.0.38`, with 
 ![Learning Outcomes Screenshot](screenshots/apache-learning-page.png)
 
 The webpage includes a summary of what I learned during the homelab project:
+
 - Apache installation and configuration  
 - SFTP file transfer with FileZilla  
 - Linux file permissions  
@@ -77,7 +73,6 @@ sudo openssl req -x509 -nodes -days 365 \
   -newkey rsa:2048 \
   -keyout /etc/ssl/private/apache-selfsigned.key \
   -out /etc/ssl/certs/apache-selfsigned.crt
-
 
 Then I enabled SSL and the default HTTPS site:
 

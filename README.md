@@ -84,7 +84,7 @@ sudo systemctl reload apache2
 
 This homelab project strengthened my understanding of Linux system administration, secure web hosting, and cross‑platform workflows. It also helped me practice documenting technical work clearly for others to follow. This setup forms the foundation for more advanced projects involving automation, reverse proxies, and full-stack deployments.
 ---
-“How to Reproduce This Setup” section
+## 🛠️ How to Reproduce This setup
 Even a simple 4‑step outline makes your project more professional:
 1. 	Install Apache
 2. 	Deploy the webpage
@@ -96,3 +96,12 @@ Even a simple 4‑step outline makes your project more professional:
 - Configure a reverse proxy with Nginx or Apache  
 - Deploy a second site using virtual hosts  
 - Automate certificate renewal with a script  
+
+## 🧩 Skills Demonstrated
+- Linux system administration
+- Apache web server configuration
+- SSL/TLS certificate management
+- SFTP and secure file transfer
+- File permissions and ownership
+- Git and GitHub version control
+- Technical documentation
